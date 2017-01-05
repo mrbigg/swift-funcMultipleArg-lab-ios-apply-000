@@ -16,8 +16,12 @@
 // write your code here
 
 
+func describeContinent (continentName: String, numberOfCountries: Int) {
+    print("\(continentName) has \(numberOfCountries).")
+}
 
-
+describeContinent(continentName: "Africa", numberOfCountries:54)
+print(describeContinent)
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
  */
@@ -25,7 +29,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting(name: "Danny", "Hello")
+greeting(name: "Danny", greeting: "Hello")
 
 
 
@@ -33,8 +37,10 @@ greeting(name: "Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
-    print("There are \(days) in \(month)")
+func daysInMonth(month: String, days: Int) {
+    
+    print("There are \(days) days in \(month)")
+
 }
 
 daysInMonth(month: "November", days: 30)
@@ -47,8 +53,14 @@ daysInMonth(month: "November", days: 30)
  */
 // write your code here
 
+func beerSong(beverageType:String, numberOfBottles:Int, place:String) {
+    
+    print("\(numberOfBottles) bottles of \(beverageType) on the \(place).")
+    
+    
+}
 
-
+beerSong(beverageType: "beer", numberOfBottles: 99, place: "wall")
 
 /*:
  Checkout the solution branch - git co solution or git checkout solution and then scroll back down to this very spot to see a link that directs you to the solutions to the above questions.
